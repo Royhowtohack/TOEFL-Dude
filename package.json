@@ -1,0 +1,42 @@
+{
+  "name": "TOEFL-Dude",
+  "version": "1.0.0",
+  "description": "An easy solution for TOEFL practice exam",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Mr.Mou",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.1.3",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "productName": "TOEFL Dude",
+    "appId": "com.example.yourapp",
+    "directories": {
+      "buildResources": "icons"
+    },
+    "mac": {
+      "icon": "icons/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["x64", "arm64"]
+        }
+      ]
+    },
+    "win": {
+      "icon": "icons/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64", "ia32"]
+        }
+      ]
+    }
+  }
+}

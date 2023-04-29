@@ -1,0 +1,21 @@
+directories:
+  output: dist
+  buildResources: icons
+productName: TOEFL Dude
+appId: com.example.yourapp
+mac:
+  icon: icons/icon.icns
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+win:
+  icon: icons/icon.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - ia32
+files: []
+electronVersion: 24.1.3

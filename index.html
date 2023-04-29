@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Your App Name</title>
+  </head>
+  <body>
+    <webview id="webview" src="https://smarter.igo1996.com/ys-part-index-page" style="width:100vw; height:100vh;"></webview>
+    <script>
+      const webview = document.getElementById('webview');
+      webview.addEventListener('dom-ready', () => {
+        webview.setZoomFactor(1);
+        webview.setVisualZoomLevelLimits(1, 1);
+        webview.setLayoutZoomLevelLimits(0, 0);
+      });
+    </script>
+  </body>
+</html>
